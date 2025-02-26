@@ -1,2 +1,3 @@
 this a cool text file!
 this a second edited line
+ this is a change in the feature branch
