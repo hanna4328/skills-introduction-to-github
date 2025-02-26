@@ -1,1 +1,2 @@
 this a cool text file!
+this a second edited line
