@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Hidden Clue</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #hidden-btn {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            opacity: 0; /* Keeps it hidden */
+        }
+        #hidden-btn:hover {
+            opacity: 1; /* Appears only when hovered over */
+        }
+    </style>
+</head>
+<body>
+    <h1>There's a clue hidden somewhere...</h1>
+    <p>Find it!</p>
+    
+    <button id="hidden-btn" onclick="revealClue()">Click Me!</button>
+
+    <p id="clue" style="display: none;">Next clue: "Look under the table!"</p>
+
+    <script>
+        function revealClue() {
+            document.getElementById("clue").style.display = "block";
+        }
+    </script>
+</body>
+</html>
